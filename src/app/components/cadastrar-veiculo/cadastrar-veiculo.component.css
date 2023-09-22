@@ -1,0 +1,98 @@
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.container h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0741ad;
+} 
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 0.87rem;
+  color: #0A1F44;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #0a9f08;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: #0741ad;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #0a8e07;
+}
+
+.btn-primary:active, .btn-secondary:active {
+  background-color: #0a7c06;
+}
+
+.btn-primary:focus, .btn-secondary:focus {
+  outline: none;
+}
+
+.profile-switch {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0741ad;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  }
+  
+  .profile-switch label {
+  background-color: #0741ad;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+
+  .botao.salvar {
+    background-color: #0741ad;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+    }

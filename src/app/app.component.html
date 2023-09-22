@@ -1,0 +1,23 @@
+<body>
+  <main>
+    <header class="brand-name">
+      <img width="85px" class="brand-logo" src="/assets/logo.PNG" alt="logo" aria-hidden="true" [routerLink]="'servicos'">
+      <div class="profile-switch">
+        <div class="menu-dropdown">
+          <button class="menu-button">MENU</button>
+          <div class="menu-content">
+            <button class="menu-item" > {{ usuarioAtual() }}</button>
+            <button *ngIf="!empresa" class="menu-item" [routerLink]="'pagamento-agendamento'">Pagamento</button>
+            <button class="menu-item" (click)="sair()">Sair</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <router-outlet></router-outlet>
+    </section>
+    <footer class="footer">
+      <p>Smart Wash - © 2023 Todos os direitos reservados.</p>
+    </footer>
+  </main>
+</body>

@@ -1,0 +1,34 @@
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="text" class="form-control" [(ngModel)]="usuario.email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" [(ngModel)]="usuario.nome" id="nome" name="nome" required>
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF:</label>
+      <input type="text" class="form-control" [(ngModel)]="usuario.cpf" id="cpf" name="cpf" required>
+    </div>
+    <div class="form-group">
+      <label for="senha">Senha:</label>
+      <input type="password" class="form-control" [(ngModel)]="usuario.senha" id="senha" name="senha" required>
+    </div>
+    <div class="form-group">
+      <label for="confirmarSenha">Confirmar senha:</label>
+      <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" required>
+    </div>
+    <div class="form-group">
+        <label for="empresa">Empresa</label>
+      <input type="checkbox" class="form-control" [(ngModel)]="usuario.empresa" id="empresa" name="empresa">
+    </div>
+    
+    <div class="btn-container">
+      <button class="btn btn-primary" (click)="registrarUsuario()">Registrar-se</button>
+      <button class="btn btn-secondary" [routerLink]="['']">Login</button>
+    </div>
+  </div>
+</body>

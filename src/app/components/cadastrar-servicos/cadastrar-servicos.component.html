@@ -1,0 +1,52 @@
+<body>
+  <div class="profile-switch">
+    <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+      [routerLink]="['/agendamentos-clientes']">AGENDAMENTOS CLIENTE</button>
+    <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+    [routerLink]="['/servicos']">SERVIÇOS CADASTRADOS</button>
+</div>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Adicionar serviço</h1>
+        </div>
+        <div class="modal-body">
+          <div class="box-input row px-2">
+            <label>Nome do serviço</label>
+            <input name="nome" id="nome" type="text" [(ngModel)]="nomeServico" required
+              placeholder="Nome do serviço">
+          </div>
+          <div class="box-input row px-2">
+            <label>Valor do serviço (R$)</label>
+            <input name="valor" id="valor" type="number" step="10" [(ngModel)]="preco" required
+              placeholder="Valor do serviço (R$)">
+          </div>
+          <div class="box-input row px-2">
+            <label>Duração do serviço (minutos)</label>
+            <input name="duracao" id="duracao" type="number" step="10" [(ngModel)]="duracaoServico" required
+              placeholder="Duração do serviço (minutos)">
+          </div>
+          <div class="box-input row px-2">
+            <label>Descrição</label>
+            <input name="descricao" id="descricao" type="text" [(ngModel)]="descricaoServico" required
+              placeholder="Descrição do serviço">
+          </div>
+          <div class="salvar">
+            <button class="botao" (click)="adicionarServico()">ADICIONAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let servico of servicos" class="card">
+    <h3>{{ servico.nome }}</h3>
+    <p>Valor: R$ {{ servico.preco }}</p>
+    <p>Duração: {{ servico.duracao }} minutos</p>
+  </div>
+  <div *ngIf="servicos.length > 0" class="salvar">
+    <button class="botao" (click)="salvarServicos()">Salvar</button>
+  </div>
+</body>

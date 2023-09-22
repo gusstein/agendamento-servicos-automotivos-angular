@@ -1,0 +1,96 @@
+.body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  }
+  
+
+/* ... O restante do seu estilo ... */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.modal-content {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.box-input {
+  margin-bottom: 20px;
+}
+
+.box-input label {
+  font-size: 0.87rem;
+  color: #0A1F44;
+}
+
+.box-input select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.box-input input[type="datetime-local"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.botao {
+  padding: 10px 20px;
+  background-color: #0741ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.valores {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.profile-switch {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0741ad;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  }
+  
+

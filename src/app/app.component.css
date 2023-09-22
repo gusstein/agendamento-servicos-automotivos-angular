@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 2px solid #333333;
+  border-top: 20px solid #333333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+  margin-right: 10px;
+}
+
+.profile-switch {
+  margin-left: auto;
+}
+
+.profile-switch {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0741ad;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  }
+
+.content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.footer {
+  background-color: #0741ad;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-top: 2px solid #333333;
+  border-bottom: 20px solid #333333;
+}
+
+.brand-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+}
+
+.brand-logo {
+  cursor: pointer;
+}
+
+.profile-switch {
+  position: relative;
+}
+
+.menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-button:hover + .menu-content,
+.menu-content:hover {
+  display: block;
+}

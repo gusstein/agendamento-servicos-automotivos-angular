@@ -1,0 +1,47 @@
+<body>
+    <div *ngIf="perfil == 0" class="header">
+      <h1>AGENDAMENTO DE SERVIÇOS</h1>
+    </div>
+    <div *ngIf="perfil == 1" class="header">
+      <h1>SERVIÇOS DISPONÍVEIS</h1>
+    </div>
+  
+    <div *ngIf="perfil == 0" class="profile-switch">
+        <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+        [routerLink]="['/cadastrar-veiculos']">CADASTRAR VEÍCULO</button>
+      <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+        [routerLink]="['/realizar-agendamento']">AGENDAR SERVIÇO</button>
+      <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+        [routerLink]="['/meus-agendamentos']">MEUS AGENDAMENTOS</button>
+    </div>
+
+    <div *ngIf="perfil == 1" class="profile-switch">
+      <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+      [routerLink]="['/cadastrar-servicos']">CADASTRAR SERVIÇOS</button>
+      <button class="botao salvar" for="client-profile" type="radio" id="client-profile" name="profile"
+      [routerLink]="['/agendamentos-clientes']">AGENDAMENTOS CLIENTE</button>
+    </div>
+  
+    <div class="content">
+      <h2>{{ titulo }}</h2>
+      <div *ngIf="perfil == 0">
+        <h3>Serviços disponíveis</h3>
+        <ul>
+          <li *ngFor="let servico of listaServicos">
+            <b>Serviço:</b> {{ servico.nome }} - <b>Preço:</b> R${{ servico.preco }} - <b>Duração:</b> {{ servico.duracao }} minutos
+            <br>
+            <b>Descrição: </b> <i>{{ servico.descricao }}</i>
+          </li>
+        </ul>
+
+      </div>
+  
+      <div *ngIf="perfil == 1">
+        <h3>Serviços cadastrados</h3>
+        <ul>
+          <li *ngFor="let servico of listaServicos">{{ servico.nome }}</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  
